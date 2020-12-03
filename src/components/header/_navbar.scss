@@ -2,14 +2,41 @@
 	background-color: hsl(0, 0%, 98%);
 	padding: $padding-lg;
 	border-bottom: 1px solid black;
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	&__icon {
+
+	position: relative;
+
+	&__toggle-btn {
+		background: none;
+		outline: none;
+		border: none;
+		margin-left: $padding-xlg;
+	}
+	&__logo {
 		height: 27px;
+	}
+
+	&__icons {
+		position: absolute;
+		right: $padding-lg;
+		top: $padding-xlg;
 	}
 	&__icon--sml {
 		height: 20px;
-		padding-left: $padding-xlg;
 	}
+
+	&__list {
+		margin: $margin-md;
+		display: flex;
+		flex-direction: column;
+
+		& > a {
+			padding-top: $padding-xlg;
+			text-decoration: none;
+			color: $color-black;
+		}
+	}
+}
+
+#navbar__toggle {
+	display: none;
 }

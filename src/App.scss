@@ -1,3 +1,5 @@
+$color-black: hsl(240, 1%, 20%);
+
 $margin-sml: 0.25em;
 $margin-md: 0.5em;
 $margin-lg: 1em;
@@ -21,6 +23,9 @@ $padding-xlg: 1.5em;
 body {
 	background-color: #fff0e5;
 	margin: 0;
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	line-height: 1.6;
 }
 
 @import "./components/header/navbar";
