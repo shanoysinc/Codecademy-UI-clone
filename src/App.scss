@@ -1,0 +1,26 @@
+$margin-sml: 0.25em;
+$margin-md: 0.5em;
+$margin-lg: 1em;
+$margin-xlg: 1.5em;
+
+$padding-sml: 0.25em;
+$padding-md: 0.5em;
+$padding-lg: 1em;
+$padding-xlg: 1.5em;
+
+:root {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #fff0e5;
+	margin: 0;
+}
+
+@import "./components/header/navbar";

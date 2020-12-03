@@ -1,0 +1,15 @@
+.navbar {
+	background-color: hsl(0, 0%, 98%);
+	padding: $padding-lg;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	&__icon {
+		height: 27px;
+	}
+	&__icon--sml {
+		height: 20px;
+		padding-left: $padding-xlg;
+	}
+}
