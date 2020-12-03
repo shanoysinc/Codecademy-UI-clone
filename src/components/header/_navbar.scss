@@ -23,6 +23,9 @@
 	&__icon--sml {
 		height: 20px;
 	}
+	&__icon--md {
+		height: 26px;
+	}
 
 	&__list {
 		margin: $margin-md;
@@ -33,10 +36,23 @@
 			padding-top: $padding-xlg;
 			text-decoration: none;
 			color: $color-black;
+			display: flex;
+			& > img {
+				margin-right: $margin-lg;
+			}
+		}
+		& > a:hover {
+			color: hsl(266, 100%, 45%);
 		}
 	}
 }
 
 #navbar__toggle {
 	display: none;
+}
+
+.user-photo {
+	object-fit: cover;
+	width: 26px;
+	border-radius: 50%;
 }
