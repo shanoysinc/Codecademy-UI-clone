@@ -28,4 +28,10 @@ body {
 	line-height: 1.6;
 }
 
-@import "./components/header/navbar";
+.container {
+	margin: $margin-xlg $margin-lg;
+}
+
+@import "./components/header/navbar.scss";
+@import "./components/Catalog/Catalog.scss";
+@import "./components/quiz/Quiz.scss";
