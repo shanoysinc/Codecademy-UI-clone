@@ -2,8 +2,9 @@
 	background-color: hsl(0, 0%, 100%);
 	padding: $padding-lg;
 	border-bottom: 1px solid black;
-
-	position: relative;
+	min-width: 100%;
+	position: fixed;
+	top: 0;
 
 	&__toggle-btn {
 		background: none;

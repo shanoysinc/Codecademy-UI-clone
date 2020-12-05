@@ -13,10 +13,13 @@ import userPhoto from "../../assests/img/images.jpg";
 const NavBar = () => {
 	const toggleHandler = () => {
 		const toggle = document.getElementById("navbar__toggle");
+		const navbar = document.querySelector(".navbar");
 		if (toggle.style.display === "block") {
 			toggle.style.display = "none";
+			navbar.style.bottom = null;
 		} else {
 			toggle.style.display = "block";
+			navbar.style.bottom = 0;
 		}
 	};
 	return (
