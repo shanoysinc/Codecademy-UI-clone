@@ -1,0 +1,9 @@
+.catalogCard {
+	border: 1px solid $color-black;
+	background-color: white;
+	padding: $padding-xlg $padding-lg;
+	border-radius: 2px;
+	& > h3 {
+		color: $color-black;
+	}
+}

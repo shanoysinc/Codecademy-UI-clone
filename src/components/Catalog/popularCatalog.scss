@@ -1,5 +1,7 @@
 .popularCalalog {
-	margin-top: 2em;
+	margin-top: $margin-xlg;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
 	& > h2 {
 		color: $color-black;
 		text-transform: capitalize;
