@@ -91,6 +91,7 @@ const NavBar = () => {
 						Shanoy Sinclair
 					</a>
 				</div>
+				<button className="dropdown-btn btn">Try pro for free</button>
 			</div>
 		</div>
 	);

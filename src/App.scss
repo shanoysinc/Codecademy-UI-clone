@@ -32,6 +32,22 @@ body {
 	margin: $margin-xlg $margin-lg;
 }
 
+.btn {
+	cursor: pointer;
+	text-transform: capitalize;
+	padding: 0.8em $padding-xlg;
+	border-radius: 3px;
+	outline: none;
+	background-color: hsl(252, 87%, 48%);
+	color: white;
+	border: 0;
+	font-size: 1rem;
+}
+
+.btn:hover {
+	background-color: hsl(252, 87%, 55%);
+}
+
 @import "./components/header/navbar.scss";
 @import "./components/Catalog/Catalog.scss";
 @import "./components/quiz/Quiz.scss";
