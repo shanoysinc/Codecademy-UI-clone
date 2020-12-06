@@ -1,0 +1,7 @@
+.popularCalalog {
+	margin-top: 2em;
+	& > h2 {
+		color: $color-black;
+		text-transform: capitalize;
+	}
+}
