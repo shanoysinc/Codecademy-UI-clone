@@ -1,9 +1,109 @@
+.cardContainer {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	row-gap: 2em;
+}
 .catalogCard {
 	border: 1px solid $color-black;
 	background-color: white;
-	padding: $padding-xlg $padding-lg;
 	border-radius: 2px;
+	padding: 0 $padding-lg;
 	& > h3 {
 		color: $color-black;
+	}
+}
+
+.course {
+	padding: $padding-xlg $padding-lg;
+	text-transform: capitalize;
+}
+
+.career__path {
+	display: flex;
+	flex-direction: column;
+
+	&--svg {
+		height: 200px;
+		max-width: 160px;
+		align-self: center;
+		margin-top: 3em;
+		margin-bottom: 2.5em;
+	}
+	& > p {
+		text-transform: capitalize;
+	}
+
+	&-difficulty {
+		background-color: $color-black;
+		color: white;
+		text-transform: uppercase;
+		margin-right: 0.3em;
+		font-size: 0.9rem;
+	}
+
+	& > h3 {
+		margin-top: -0.5em;
+		text-transform: capitalize;
+	}
+
+	&--job {
+		font-size: $font-size-sml;
+		margin-left: auto;
+		font-weight: 600;
+	}
+}
+
+.course__level {
+	display: flex;
+	margin-top: -1.3em;
+	align-items: baseline;
+	& > li {
+		list-style: none;
+	}
+
+	&--dot {
+		height: 8px;
+		width: 8px;
+		border-radius: 50%;
+		border: 1px solid $color-black;
+	}
+
+	& > * + * {
+		margin-left: $margin-sml;
+	}
+
+	&--difficulty {
+		color: #4b4b4d;
+		font-size: 0.9rem;
+	}
+}
+
+.dot-fill {
+	background-color: $color-black;
+}
+
+.programmingLang {
+	background-color: $color-yellow;
+	& > h3 {
+		margin-top: -0.5em;
+		text-transform: capitalize;
+	}
+	&--progress {
+		font-family: serif;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		text-transform: capitalize;
+	}
+	&--motivate-1 {
+		font-size: $font-size-sml;
+		text-transform: capitalize;
+		font-family: Tahoma, Geneva, Verdana, sans-serif, serif;
+		letter-spacing: 0.1rem;
+	}
+	&--motivate-2 {
+		text-transform: capitalize;
+		margin-left: auto;
+		color: hsl(252, 87%, 38%);
 	}
 }
