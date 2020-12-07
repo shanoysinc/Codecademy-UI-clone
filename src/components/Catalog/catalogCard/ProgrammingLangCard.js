@@ -3,13 +3,19 @@ import React from "react";
 const ProgrammingLangCard = ({ title }) => {
 	return (
 		<div className="catalogCard programmingLang">
-			<p>Course</p>
+			<p>
+				<span className="programmingLang-difficulty">pro</span> career
+				path
+			</p>
 			<h3>{title}</h3>
-
-			<div className="programmingLang--progress">
-				<p className="programmingLang--motivate-1">In Progress. . .</p>
-				<p className="programmingLang--motivate-2">Keep going</p>
+			<div className="course__level">
+				<div className="course__level--dot dot-fill"></div>
+				<div className="course__level--dot"></div>
+				<div className="course__level--difficulty">
+					Beginner friendly
+				</div>
 			</div>
+			<p className="programmingLang--job">job essentials</p>
 		</div>
 	);
 };

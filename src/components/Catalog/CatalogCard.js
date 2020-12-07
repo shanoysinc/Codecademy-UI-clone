@@ -10,7 +10,7 @@ import javascript from "../../assests/svg/catalog/javascript.svg";
 import ProgrammingLangCard from "./catalogCard/ProgrammingLangCard";
 import CareerPathCard from "./catalogCard/CareerPathCard";
 import CourseCard from "./catalogCard/CourseCard";
-
+import ExploreCard from "./catalogCard/ExploreCard";
 const CatalogCard = () => {
 	return (
 		<div className="cardContainer">
@@ -18,19 +18,23 @@ const CatalogCard = () => {
 
 			<CareerPathCard title={"Front-End engineer"} svg={curriculum} />
 
-			<ProgrammingLangCard title={"Learn Javascript"} />
+			<ExploreCard title={"Learn Javascript"} />
+			<ProgrammingLangCard title={"learn html"} />
+
 			<CourseCard
 				title={"Explore all web development"}
 				svg={webDevelopment}
 			/>
-			<CourseCard title={"learn python 3"} svg={python} />
+			<ProgrammingLangCard title={"learn python 3"} />
+
 			<CourseCard title={"Explore all Data science"} svg={dataScience} />
 			<CareerPathCard title={"Data Scientist"} svg={dataScientist} />
 
 			<CourseCard title={"Explore all Javascript"} svg={javascript} />
 			<CareerPathCard title={"Full-Stack engineer"} svg={fullstack} />
+			<ProgrammingLangCard title={"learn java"} />
 
-			<ProgrammingLangCard title={"Welcome to Codecademy"} />
+			<ExploreCard title={"Welcome to Codecademy"} />
 		</div>
 	);
 };

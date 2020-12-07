@@ -89,7 +89,7 @@
 	background-color: $color-black;
 }
 
-.programmingLang {
+.exploreCard {
 	background-color: $color-yellow;
 	& > h3 {
 		margin-top: -0.5em;
@@ -112,5 +112,33 @@
 		text-transform: capitalize;
 		margin-left: auto;
 		color: hsl(252, 87%, 38%);
+	}
+}
+
+.programmingLang {
+	display: flex;
+	flex-direction: column;
+
+	& > p {
+		text-transform: capitalize;
+	}
+
+	&-difficulty {
+		background-color: $color-black;
+		color: white;
+		text-transform: uppercase;
+		margin-right: 0.3em;
+		font-size: 0.9rem;
+	}
+
+	& > h3 {
+		margin-top: -0.5em;
+		text-transform: capitalize;
+	}
+
+	&--job {
+		font-size: $font-size-sml;
+		margin-left: auto;
+		font-weight: 600;
 	}
 }
