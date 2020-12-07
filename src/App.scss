@@ -1,6 +1,8 @@
 $color-black: hsl(240, 1%, 20%);
 $color-yellow: hsl(50, 100%, 50%);
 $color-purple-dark: #10162f;
+$color-purple: hsl(252, 87%, 48%);
+
 $font-size-sml: 0.875rem;
 
 $margin-sml: 0.25em;
@@ -58,3 +60,4 @@ body {
 @import "./components/Catalog/popularCatalog.scss";
 @import "./components/Catalog/CatalogCard.scss";
 @import "./components/Catalog/newsNoteWorthy/newsNoteWorth.scss";
+@import "./components/Catalog/getInspireSectiion/getInspire.scss";
