@@ -10,6 +10,7 @@ import javascript from "../../assests/svg/catalog/javascript.svg";
 import ProgrammingLangCard from "./catalogCard/ProgrammingLangCard";
 import CareerPathCard from "./catalogCard/CareerPathCard";
 import CourseCard from "./catalogCard/CourseCard";
+
 const CatalogCard = () => {
 	return (
 		<div className="cardContainer">

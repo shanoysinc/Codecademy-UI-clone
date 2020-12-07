@@ -5,7 +5,7 @@
 	min-width: 100%;
 	position: fixed;
 	top: 0;
-
+	z-index: 200;
 	&__toggle-btn {
 		background: none;
 		outline: none;

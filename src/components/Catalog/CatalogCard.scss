@@ -8,9 +8,16 @@
 	background-color: white;
 	border-radius: 2px;
 	padding: 0 $padding-lg;
+	transition: all 0.3s ease-in-out;
+	z-index: 100;
 	& > h3 {
 		color: $color-black;
 	}
+}
+
+.catalogCard:hover {
+	box-shadow: -10px 10px 0px -2px $color-black;
+	transform: translate(5px, -1px);
 }
 
 .course {
