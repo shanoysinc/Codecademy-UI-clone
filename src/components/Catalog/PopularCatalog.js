@@ -1,10 +1,10 @@
 import React from "react";
-import CatalogCard from "./CatalogCard";
+import CatalogCards from "./CatalogCards";
 const PopularCatalog = () => {
 	return (
 		<div className="popularCalalog">
 			<h2>Most popular</h2>
-			<CatalogCard />
+			<CatalogCards />
 		</div>
 	);
 };

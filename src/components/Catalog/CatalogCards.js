@@ -14,27 +14,27 @@ import ExploreCard from "./catalogCard/ExploreCard";
 const CatalogCard = () => {
 	return (
 		<div className="cardContainer">
-			<CourseCard title={"Explore all python"} svg={python} />
+			<ExploreCard title={"Explore all python"} svg={python} />
 
 			<CareerPathCard title={"Front-End engineer"} svg={curriculum} />
 
-			<ExploreCard title={"Learn Javascript"} />
+			<CourseCard title={"Learn Javascript"} />
 			<ProgrammingLangCard title={"learn html"} />
 
-			<CourseCard
+			<ExploreCard
 				title={"Explore all web development"}
 				svg={webDevelopment}
 			/>
 			<ProgrammingLangCard title={"learn python 3"} />
 
-			<CourseCard title={"Explore all Data science"} svg={dataScience} />
+			<ExploreCard title={"Explore all Data science"} svg={dataScience} />
 			<CareerPathCard title={"Data Scientist"} svg={dataScientist} />
 
-			<CourseCard title={"Explore all Javascript"} svg={javascript} />
+			<ExploreCard title={"Explore all Javascript"} svg={javascript} />
 			<CareerPathCard title={"Full-Stack engineer"} svg={fullstack} />
 			<ProgrammingLangCard title={"learn java"} />
 
-			<ExploreCard title={"Welcome to Codecademy"} />
+			<CourseCard title={"Welcome to Codecademy"} />
 		</div>
 	);
 };

@@ -1,5 +1,6 @@
 $color-black: hsl(240, 1%, 20%);
 $color-yellow: hsl(50, 100%, 50%);
+$color-purple-dark: #10162f;
 $font-size-sml: 0.875rem;
 
 $margin-sml: 0.25em;
@@ -52,7 +53,8 @@ body {
 }
 
 @import "./components/header/navbar.scss";
-@import "./components/Catalog/Catalog.scss";
+// @import "./components/Catalog/Catalog.scss";
 @import "./components/quiz/Quiz.scss";
 @import "./components/Catalog/popularCatalog.scss";
 @import "./components/Catalog/CatalogCard.scss";
+@import "./components/Catalog/newsNoteWorthy/newsNoteWorth.scss";

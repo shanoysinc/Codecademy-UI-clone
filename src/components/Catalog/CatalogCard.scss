@@ -20,7 +20,7 @@
 	transform: translate(5px, -1px);
 }
 
-.course {
+.exploreCard {
 	padding: $padding-xlg $padding-lg;
 	text-transform: capitalize;
 }
@@ -89,7 +89,7 @@
 	background-color: $color-black;
 }
 
-.exploreCard {
+.courseCard {
 	background-color: $color-yellow;
 	& > h3 {
 		margin-top: -0.5em;

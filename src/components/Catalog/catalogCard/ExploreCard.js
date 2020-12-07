@@ -1,15 +1,10 @@
 import React from "react";
 
-const ExploreCard = ({ title }) => {
+const ExploreCard = ({ title, svg }) => {
 	return (
 		<div className="catalogCard exploreCard">
-			<p>Course</p>
+			<img src={svg} alt="" />
 			<h3>{title}</h3>
-
-			<div className="exploreCard--progress">
-				<p className="exploreCard--motivate-1">In Progress. . .</p>
-				<p className="exploreCard--motivate-2">Keep going</p>
-			</div>
 		</div>
 	);
 };
