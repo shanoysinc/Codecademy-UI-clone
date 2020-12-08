@@ -1,0 +1,38 @@
+.footerContainer__outer {
+	border-top: 1px solid $color-black;
+}
+
+.footerContainer__inner {
+	margin: $margin-xlg $margin-lg;
+}
+
+.infoContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+	&__title {
+		font-size: $font-size-sml;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		padding-top: $padding-lg;
+		& > a {
+			font-size: $font-size-sml;
+			text-transform: capitalize;
+			color: $color-black;
+			text-decoration: none;
+		}
+		& > a:hover {
+			color: $color-purple;
+		}
+		& > a + a {
+			padding-top: $padding-sml;
+		}
+	}
+}

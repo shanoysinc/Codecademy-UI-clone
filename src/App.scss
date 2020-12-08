@@ -34,10 +34,6 @@ body {
 	color: $color-black;
 }
 
-.container {
-	margin: $margin-xlg $margin-lg;
-}
-
 .btn {
 	cursor: pointer;
 	text-transform: capitalize;
@@ -55,7 +51,7 @@ body {
 }
 
 @import "./components/header/navbar.scss";
-// @import "./components/Catalog/Catalog.scss";
+@import "./components/Catalog/Catalog.scss";
 @import "./components/quiz/Quiz.scss";
 @import "./components/Catalog/popularCatalog.scss";
 @import "./components/Catalog/CatalogCard.scss";

@@ -6,11 +6,13 @@ import GetInpsire from "./getInspireSectiion/GetInspire";
 import Footer from "../footer/Footer";
 const Catalog = () => {
 	return (
-		<div className="container">
-			<Quiz />
-			<PopularCatalog />
-			<NewsNoteWorth />
-			<GetInpsire />
+		<div className="catalogContainer__outer">
+			<div className="catalogContainer__inner">
+				<Quiz />
+				<PopularCatalog />
+				<NewsNoteWorth />
+				<GetInpsire />
+			</div>
 			<Footer />
 		</div>
 	);
