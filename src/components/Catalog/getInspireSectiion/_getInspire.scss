@@ -1,6 +1,19 @@
 .getInspireContainer {
 	margin-top: 4em;
 }
+.getInspire {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2em;
+	// width: 100%;
+}
+.getInspireLink {
+	grid-column: 1 / span 2;
+}
+
+.span2Col {
+	grid-column: 1 / span 2;
+}
 
 .getInspireLink,
 .inspireLinkWithImg {
@@ -18,6 +31,9 @@
 		font-size: 1.25rem;
 		color: $color-black;
 		font-weight: 600;
+	}
+	& > a:hover {
+		text-decoration: underline;
 	}
 }
 

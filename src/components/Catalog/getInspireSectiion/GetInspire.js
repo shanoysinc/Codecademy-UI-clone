@@ -32,6 +32,7 @@ const GetInspire = () => {
 					img={resourseImg}
 					contentType={"resources"}
 					title={"Our best resources for students"}
+					spanCol={"span2Col"}
 				/>
 
 				<InspireLinkWithImg
@@ -53,6 +54,7 @@ const GetInspire = () => {
 					img={blogImg_1}
 					contentType={"Article"}
 					title={"Consider Design While You Build"}
+					spanCol={"span2Col"}
 				/>
 				<GetInspireLink
 					contentType={"article"}
