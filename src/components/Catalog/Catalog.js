@@ -3,6 +3,7 @@ import Quiz from "../quiz/Quiz";
 import PopularCatalog from "./PopularCatalog";
 import NewsNoteWorth from "./newsNoteWorthy/NewsNoteWorth";
 import GetInpsire from "./getInspireSectiion/GetInspire";
+import Footer from "../footer/Footer";
 const Catalog = () => {
 	return (
 		<div className="container">
@@ -10,6 +11,7 @@ const Catalog = () => {
 			<PopularCatalog />
 			<NewsNoteWorth />
 			<GetInpsire />
+			<Footer />
 		</div>
 	);
 };
