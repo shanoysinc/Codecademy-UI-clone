@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Info from "./Info";
+// import Info from "./Info";
 const CompanyInfo = () => {
 	return (
 		<div className="infoContainer">
