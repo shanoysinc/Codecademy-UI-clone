@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import GooglePlayIcon from "../../../assests/svg/googleplay.svg";
+import AppleStoreIcon from "../../../assests/svg/applestore.svg";
+
 // import Info from "./Info";
 const CompanyInfo = () => {
 	return (
@@ -48,6 +51,22 @@ const CompanyInfo = () => {
 				<div className="info__items">
 					<a href="#">for business</a>
 					<a href="#">for education</a>
+				</div>
+			</div>
+
+			<div className="info">
+				<h3 className="info__title">Mobile</h3>
+				<div className="info__items mobileIcon">
+					<a href="#">
+						<img
+							src={GooglePlayIcon}
+							alt="googleplay icon"
+							className="googleplayIcon"
+						/>
+					</a>
+					<a href="#">
+						<img src={AppleStoreIcon} alt="applestore icon" />
+					</a>
 				</div>
 			</div>
 		</div>

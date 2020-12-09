@@ -50,11 +50,11 @@ body {
 	background-color: hsl(252, 87%, 55%);
 }
 
-@import "./components/header/navbar.scss";
-@import "./components/Catalog/Catalog.scss";
-@import "./components/quiz/Quiz.scss";
-@import "./components/Catalog/popularCatalog.scss";
-@import "./components/Catalog/CatalogCard.scss";
-@import "./components/Catalog/newsNoteWorthy/newsNoteWorth.scss";
-@import "./components/Catalog/getInspireSectiion/getInspire.scss";
-@import "./components/footer/footer.scss";
+@import "./components/header/_navbar";
+@import "./components/Catalog/_Catalog";
+@import "./components/quiz/_Quiz";
+@import "./components/Catalog/_popularCatalog";
+@import "./components/Catalog/_CatalogCard";
+@import "./components/Catalog/newsNoteWorthy/_newsNoteWorth";
+@import "./components/Catalog/getInspireSectiion/_getInspire";
+@import "./components/footer/_footer";

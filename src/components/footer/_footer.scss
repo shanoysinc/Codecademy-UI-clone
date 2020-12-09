@@ -12,11 +12,29 @@
 }
 
 .info {
+	padding-top: $padding-md;
 	&__title {
 		font-size: $font-size-sml;
 		font-weight: 400;
 		text-transform: uppercase;
 		margin-bottom: 0;
+	}
+	& > .mobileIcon {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		& > a > img {
+			width: 119.656px;
+			height: 39.9844px;
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		& > a + a {
+			padding-top: 0;
+			padding-left: 1em;
+		}
 	}
 	&__items {
 		display: flex;
