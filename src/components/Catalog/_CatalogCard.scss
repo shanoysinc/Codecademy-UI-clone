@@ -10,6 +10,8 @@
 	padding: 0 $padding-lg;
 	transition: all 0.2s ease-in-out;
 	z-index: 100;
+	text-decoration: none;
+	color: $color-black;
 	& > h3 {
 		color: $color-black;
 	}

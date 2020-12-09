@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const ProgrammingLangCard = ({ title }) => {
 	return (
-		<div className="catalogCard programmingLang">
+		<a href="#" className="catalogCard programmingLang">
 			<p>
 				<span className="programmingLang-difficulty">pro</span> career
 				path
@@ -16,7 +17,7 @@ const ProgrammingLangCard = ({ title }) => {
 				</div>
 			</div>
 			<p className="programmingLang--job">job essentials</p>
-		</div>
+		</a>
 	);
 };
 

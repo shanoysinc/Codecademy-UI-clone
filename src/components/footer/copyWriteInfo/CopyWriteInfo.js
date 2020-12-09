@@ -18,5 +18,4 @@ const CopyWriteInfo = () => {
 	);
 };
 
-//
 export default CopyWriteInfo;

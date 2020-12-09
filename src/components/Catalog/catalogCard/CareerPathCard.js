@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const CareerPathCard = ({ title, svg }) => {
 	return (
-		<div className="catalogCard career__path">
+		<a href="#" className="catalogCard career__path">
 			<p>
 				<span className="career__path-difficulty">pro</span> career path
 			</p>
@@ -16,7 +17,7 @@ const CareerPathCard = ({ title, svg }) => {
 			</div>
 			<img src={svg} alt="" className="career__path--svg" />
 			<p className="career__path--job">job essentials</p>
-		</div>
+		</a>
 	);
 };
 

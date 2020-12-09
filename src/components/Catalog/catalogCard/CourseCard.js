@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const CourseCard = ({ title }) => {
 	return (
-		<div className="catalogCard courseCard">
+		<a href="#" className="catalogCard courseCard">
 			<p>Course</p>
 			<h3>{title}</h3>
 
@@ -10,7 +11,7 @@ const CourseCard = ({ title }) => {
 				<p className="courseCard--motivate-1">In Progress. . .</p>
 				<p className="courseCard--motivate-2">Keep going</p>
 			</div>
-		</div>
+		</a>
 	);
 };
 
