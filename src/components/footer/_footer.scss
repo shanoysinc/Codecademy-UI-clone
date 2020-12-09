@@ -11,7 +11,16 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.info {
+.courseContainer__outer {
+	border-top: 1px solid $color-black;
+	margin-top: $margin-xlg;
+}
+.courseContainer__outer > h3 {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.footerItems {
 	padding-top: $padding-md;
 	&__title {
 		font-size: $font-size-sml;
@@ -19,6 +28,26 @@
 		text-transform: uppercase;
 		margin-bottom: 0;
 	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		padding-top: $padding-lg;
+		& > a {
+			font-size: $font-size-sml;
+			text-transform: capitalize;
+			color: $color-black;
+			text-decoration: none;
+		}
+		& > a:hover {
+			color: $color-purple;
+		}
+		& > a + a {
+			padding-top: $padding-md;
+		}
+	}
+}
+
+.footerItems {
 	& > .mobileIcon {
 		display: flex;
 		flex-direction: row;
@@ -36,21 +65,17 @@
 			padding-left: 1em;
 		}
 	}
-	&__items {
-		display: flex;
-		flex-direction: column;
-		padding-top: $padding-lg;
-		& > a {
-			font-size: $font-size-sml;
-			text-transform: capitalize;
-			color: $color-black;
-			text-decoration: none;
-		}
-		& > a:hover {
-			color: $color-purple;
-		}
-		& > a + a {
-			padding-top: $padding-sml;
+}
+
+.courseContainer__inner {
+	.footerItems {
+		&__title {
+			font-size: 0.75em;
+			font-weight: 600;
 		}
 	}
+}
+.courseItems {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
