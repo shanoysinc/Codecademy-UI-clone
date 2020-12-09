@@ -18,18 +18,25 @@
 	}
 
 	&__box {
-		background-color: $color-yellow;
+		// background-color: $color-yellow;
 		color: #10162f;
-		padding: $padding-md 0;
+		text-decoration: none;
+
 		&-items {
-			display: flex;
-			justify-content: center;
+			background-color: $color-yellow;
+			position: relative;
+			display: block;
+			padding: $padding-md 0;
+			overflow: hidden;
 
 			& > p {
 				padding-left: 1em;
-
+				z-index: 200;
 				letter-spacing: 0.05em;
+				margin-left: 4em;
 				font-weight: 700;
+				margin-bottom: 0;
+				margin-top: 0;
 			}
 
 			&-link {
@@ -45,4 +52,20 @@
 			}
 		}
 	}
+}
+.quizSvg_1,
+.quizSvg_2 {
+	z-index: 100;
+}
+.quizSvg_1 {
+	position: absolute;
+	left: -40px;
+	bottom: 0;
+	height: 50px;
+}
+.quizSvg_2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 35px;
 }
