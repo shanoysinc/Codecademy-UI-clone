@@ -11,7 +11,8 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.courseContainer__outer {
+.courseContainer__outer,
+.copyWriteInfo__Container {
 	border-top: 1px solid $color-black;
 	margin-top: $margin-xlg;
 }
@@ -78,4 +79,31 @@
 .courseItems {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.copyWriteInfo {
+	margin-top: $margin-md;
+	& > a {
+		font-size: $font-size-sml;
+		text-transform: capitalize;
+		color: $color-black;
+		text-decoration: none;
+	}
+
+	& > a + a {
+		// border-left: 1px solid $color-black;
+		// padding-left: $padding-sml;
+		// padding-right: $padding-sml;
+	}
+}
+.copyWriteInfo__company {
+	margin-top: 0;
+}
+
+.copyWriteInfo__company,
+.copyWriteInfo {
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size: $font-size-sml;
 }
