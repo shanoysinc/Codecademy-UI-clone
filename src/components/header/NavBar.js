@@ -15,7 +15,6 @@ const NavBar = () => {
 			toggle.style.display = "none";
 			setShowNotification(() => false);
 		} else {
-			// setShowDropdownItems(() => false);
 			setShowNotification(() => true);
 			toggle.style.display = "block";
 		}
@@ -33,9 +32,7 @@ const NavBar = () => {
 			navbar.style.bottom = null;
 			setShowDropdownItems(() => false);
 		} else {
-			// setShowNotification(() => false);
 			setShowDropdownItems(() => true);
-			console.log(notificationBtn.style.display);
 			notificationBtn.style.display = "none";
 			toggle.style.display = "block";
 			navbar.style.bottom = 0;
