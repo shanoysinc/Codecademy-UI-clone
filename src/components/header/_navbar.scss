@@ -6,10 +6,17 @@
 	position: fixed;
 	top: 0;
 	z-index: 200;
-	&__toggle-btn {
+	&__notification {
+		text-align: center;
+	}
+	&__toggleNofi-btn,
+	&__toggleMenu-btn {
 		background: none;
 		outline: none;
 		border: none;
+	}
+
+	&__toggleMenu-btn {
 		margin-left: $padding-xlg;
 	}
 	&__logo {
