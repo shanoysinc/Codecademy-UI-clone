@@ -25,6 +25,9 @@ const NavBar = () => {
 		const notificationBtn = document.querySelector(
 			".navbar__toggleNofi-btn"
 		);
+
+		setShowNotification(() => false);
+
 		if (toggle.style.display === "block") {
 			toggle.style.display = "none";
 			notificationBtn.style.display = "";
