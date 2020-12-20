@@ -12,4 +12,29 @@
 			grid-column: 1 / span 2;
 		}
 	}
+	.getInspireLink {
+		grid-column: initial;
+	}
+
+	.infoContainer,
+	.courseItems {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.footerContainer__inner {
+		margin: $margin-xlg 4em;
+	}
+
+	.footerItems {
+		&__title {
+			font-size: 1rem;
+		}
+		&__items {
+			& > a {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1020px) {
 }
