@@ -14,7 +14,11 @@ import ExploreCard from "./catalogCard/ExploreCard";
 const CatalogCard = () => {
 	return (
 		<div className="cardContainer">
-			<ExploreCard title={"Explore all python"} svg={python} />
+			<ExploreCard
+				title={"Explore all python"}
+				svg={python}
+				gridRow="item-1"
+			/>
 
 			<CareerPathCard title={"Front-End engineer"} svg={curriculum} />
 

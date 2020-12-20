@@ -1,0 +1,15 @@
+@media screen and (min-width: 770px) {
+	.cardContainer {
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-flow: dense;
+		gap: 2em;
+	}
+	.newsGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
+
+		&__link {
+			grid-column: 1 / span 2;
+		}
+	}
+}
