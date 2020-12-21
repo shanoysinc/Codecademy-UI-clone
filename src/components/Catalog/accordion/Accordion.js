@@ -21,7 +21,7 @@ const Accordion = ({ Links, title }) => {
 
 	return (
 		<>
-			<button class="accordion" onClick={closeAccordion}>
+			<button className="accordion" onClick={closeAccordion}>
 				<span>{title}</span>{" "}
 				<img
 					src={DownArrow}
@@ -30,9 +30,11 @@ const Accordion = ({ Links, title }) => {
 					ref={arrowIcon}
 				/>
 			</button>
-			<div class="panel" ref={accordionBtn}>
-				{Links.map((link) => (
-					<a href="#">{link}</a>
+			<div className="panel" ref={accordionBtn}>
+				{Links.map((link, index) => (
+					<a href="#" key={index}>
+						{link}
+					</a>
 				))}
 			</div>
 		</>

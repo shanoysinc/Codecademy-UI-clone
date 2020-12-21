@@ -176,12 +176,9 @@
 		grid-template-columns: repeat(12, 1fr);
 
 		&__left {
-			&--container {
-				// display: flex;
-				// flex-direction: column;
-			}
+			display: grid;
+
 			grid-column: 1 / span 3;
-			// background-color: red;
 			margin-top: 6.5em;
 			margin-left: 5em;
 		}
