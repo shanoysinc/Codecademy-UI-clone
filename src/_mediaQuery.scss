@@ -221,6 +221,7 @@
 
 		&__right {
 			grid-column: 4 / span 10;
+			margin-right: 2.5em;
 		}
 	}
 
@@ -228,7 +229,7 @@
 		display: none;
 	}
 	.courseContainer__outer {
-		padding-left: 2em;
+		padding-left: 2.5em;
 		border-top: none;
 		border-left: 1px solid $color-black;
 	}
