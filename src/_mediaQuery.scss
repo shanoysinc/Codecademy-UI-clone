@@ -118,8 +118,6 @@
 
 	.getInspire__grid--1 {
 		grid-template-columns: repeat(3, 1fr);
-		// row-gap: 0;
-		// grid-auto-rows: 1fr;
 	}
 	.getInspire__grid--1 .span-2-Col {
 		margin-top: 3em;
@@ -128,7 +126,6 @@
 	}
 	.getInspire__grid--2 {
 		grid-auto-flow: dense;
-		// grid-auto-rows: 1fr;
 	}
 	.getInspire__grid--2 .getInspireLink:nth-child(5),
 	.getInspire__grid--2 .getInspireLink:nth-child(6),
@@ -139,12 +136,6 @@
 		padding-left: 0;
 	}
 
-	// .getInspire__grid--2 .getInspireLink:nth-child(6),
-	// .getInspire__grid--2 .getInspireLink:nth-child(8) {
-	// 	grid-column: initial;
-	// 	margin-top: 0;
-	// 	padding-left: 0;
-	// }
 	.getInspire__grid--2 .getInspireLink:nth-child(6) {
 		position: absolute;
 
@@ -176,5 +167,67 @@
 
 	.getInspire__grid--2 .span-2-Col {
 		grid-column: 1 / span 2;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.sidebar {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+
+		&__left {
+			&--container {
+				// display: flex;
+				// flex-direction: column;
+			}
+			grid-column: 1 / span 3;
+			// background-color: red;
+			margin-top: 6.5em;
+			margin-left: 5em;
+		}
+		.accordion {
+			display: block;
+			color: $color-black;
+			margin-bottom: $margin-xlg;
+			font-weight: 600;
+			border: 0;
+			outline: none;
+			background-color: inherit;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			& > .arrow-icon {
+				height: 15px;
+				margin-left: 0.2em;
+			}
+		}
+
+		.panel {
+			display: flex;
+			flex-direction: column;
+			margin-top: -1em;
+			margin-bottom: $margin-xlg;
+
+			& > a {
+				text-decoration: none;
+				color: $color-black;
+				font-size: 0.95rem;
+				margin-left: $margin-md;
+			}
+			& > a:hover {
+				color: $color-purple;
+			}
+			& > a + a {
+				padding-top: $padding-lg;
+			}
+		}
+
+		&__right {
+			grid-column: 4 / span 10;
+		}
+	}
+
+	.quiz__catalog-btn {
+		display: none;
 	}
 }
