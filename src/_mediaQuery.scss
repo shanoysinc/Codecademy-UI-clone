@@ -59,9 +59,26 @@
 	.getInspire__grid--2 .span-2-Col {
 		grid-column: 1 / span 3;
 	}
+	// .getInspire__grid--2 .getInspireLink:nth-child(5) {
+	// 	grid-column: 1 / span 3;
+	// }
 
-	.getInspire__grid--3 .getInspireLink {
-		grid-column: initial;
+	.getInspire__grid--2 .getInspireLink:nth-child(6),
+	.getInspire__grid--2 .getInspireLink:nth-child(8) {
+		grid-column: 2 / span 3;
+		margin-top: -5.5em;
+		padding-left: 5em;
+	}
+
+	.getInspireLink {
+		& > a {
+			font-size: 1.35rem;
+		}
+	}
+	.inspireLinkWithImg {
+		& > a {
+			font-size: 1.5rem;
+		}
 	}
 
 	.infoContainer,

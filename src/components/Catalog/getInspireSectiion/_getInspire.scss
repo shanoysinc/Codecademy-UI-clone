@@ -6,8 +6,7 @@
 	grid-template-columns: repeat(1, 1fr);
 	column-gap: 2em;
 }
-.getInspire__grid--2,
-.getInspire__grid--3 {
+.getInspire__grid--2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2em;
@@ -22,6 +21,7 @@
 .getInspire__grid--2 .getInspireLink:nth-child(8) {
 	grid-column: 1 / span 2;
 }
+
 // .getInspire__grid--3 .getInspireLink {
 // 	grid-column: 1 / span 2;
 // }

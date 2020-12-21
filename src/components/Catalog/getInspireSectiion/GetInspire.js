@@ -65,7 +65,7 @@ const GetInspire = () => {
 						title={"What is programming?"}
 					/>
 					<GetInspireLink
-						contentType={"article"}
+						contentType={"video"}
 						title={
 							"Learn From Home Day: Intro to JavaScript—the Language of the Internet!"
 						}
@@ -75,7 +75,7 @@ const GetInspire = () => {
 						title={"What is Front-End?"}
 					/>
 					<GetInspireLink
-						contentType={"ARTICLE"}
+						contentType={"Blog"}
 						title={"Myspace and the Coding Legacy"}
 					/>
 
