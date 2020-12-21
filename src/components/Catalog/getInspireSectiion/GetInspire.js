@@ -59,9 +59,7 @@ const GetInspire = () => {
 						title={"Consider Design While You Build"}
 						spanCol={"span-2-Col"}
 					/>
-				</div>
 
-				<div className="getInspire__grid--3">
 					<GetInspireLink
 						contentType={"article"}
 						title={"What is programming?"}
