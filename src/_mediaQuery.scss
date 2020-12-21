@@ -43,12 +43,19 @@
 	.getInspire__grid--1 {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	.getInspire__grid--1 .inspireLinkWithImg {
+	.getInspire__grid--1 .span-2-Col {
 		grid-column: 1 / span 2;
 	}
+
 	.getInspire__grid--2 {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	.getInspire__grid--2 .span-2-Col > a,
+	.getInspire__grid--1 .span-2-Col > a {
+		font-size: 2.25rem;
+	}
+
 	.getInspire__grid--2 .span-2-Col {
 		grid-column: 1 / span 3;
 	}

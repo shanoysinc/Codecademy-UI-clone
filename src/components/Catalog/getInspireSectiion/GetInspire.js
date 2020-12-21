@@ -33,7 +33,7 @@ const GetInspire = () => {
 						img={resourseImg}
 						contentType={"resources"}
 						title={"Our best resources for students"}
-						spanCol={"span2Col"}
+						spanCol={"span-2-Col"}
 					/>
 				</div>
 
