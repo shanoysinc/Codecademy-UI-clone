@@ -6,8 +6,11 @@ const Footer = () => {
 	return (
 		<div className="footerContainer__outer">
 			<div className="footerContainer__inner">
-				<CompanyInfo />
-				<CourseCatalog />
+				<div className="footerGrid">
+					<CompanyInfo />
+					<CourseCatalog />
+				</div>
+
 				<CopyWriteInfo />
 			</div>
 		</div>

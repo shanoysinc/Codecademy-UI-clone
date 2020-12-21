@@ -227,4 +227,22 @@
 	.quiz__catalog-btn {
 		display: none;
 	}
+	.courseContainer__outer {
+		padding-left: 2em;
+		border-top: none;
+		border-left: 1px solid $color-black;
+	}
+	.footerContainer__inner {
+		margin: $margin-xlg 8em;
+	}
+	.copyWriteInfo__Container {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+
+	.footerGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
