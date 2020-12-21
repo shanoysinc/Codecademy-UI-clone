@@ -16,9 +16,11 @@ const Quiz = () => {
 						alt="quiz svg"
 						className="quizSvg_2--bg"
 					/>
-
+					{/* <div className="quiz__box-content"> */}
 					<p>Not sure where to begin?</p>
 					<p className="quiz__box-items-link">Take our quiz →</p>
+					{/* </div> */}
+
 					<img src={quizSvg_2} alt="quiz svg" className="quizSvg_2" />
 				</div>
 			</a>

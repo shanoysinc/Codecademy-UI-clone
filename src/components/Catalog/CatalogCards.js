@@ -35,8 +35,9 @@ const CatalogCard = () => {
 			<CareerPathCard title={"Data Scientist"} svg={dataScientist} />
 
 			<ExploreCard title={"Explore all Javascript"} svg={javascript} />
-			<CareerPathCard title={"Full-Stack engineer"} svg={fullstack} />
 			<ProgrammingLangCard title={"learn java"} />
+
+			<CareerPathCard title={"Full-Stack engineer"} svg={fullstack} />
 
 			<CourseCard title={"Welcome to Codecademy"} />
 		</div>

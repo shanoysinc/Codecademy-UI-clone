@@ -1,4 +1,32 @@
 @media screen and (min-width: 770px) {
+	.catalogContainer__inner {
+		margin: $margin-xlg 2em;
+	}
+	.quiz__box-items {
+		text-align: center;
+		padding: $padding-xlg 0;
+	}
+	.quizSvg_2--bg {
+		position: absolute;
+		left: -75px;
+		bottom: 0;
+		height: 75px;
+	}
+	.quizSvg_1 {
+		position: absolute;
+		left: -30px;
+		bottom: 0;
+		height: 55px;
+	}
+	.quiz__box-items > p {
+		display: inline-block;
+		font-size: 1.1rem;
+	}
+
+	.quiz__box-items > p + p {
+		margin: 0;
+		padding-left: $padding-sml;
+	}
 	.cardContainer {
 		grid-template-columns: repeat(2, 1fr);
 		grid-auto-flow: dense;
@@ -12,7 +40,20 @@
 			grid-column: 1 / span 2;
 		}
 	}
-	.getInspireLink {
+	.getInspire__grid--1 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.getInspire__grid--1 .inspireLinkWithImg {
+		grid-column: 1 / span 2;
+	}
+	.getInspire__grid--2 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.getInspire__grid--2 .span-2-Col {
+		grid-column: 1 / span 3;
+	}
+
+	.getInspire__grid--3 .getInspireLink {
 		grid-column: initial;
 	}
 
@@ -37,4 +78,17 @@
 }
 
 @media screen and (min-width: 1020px) {
+	.catalogContainer__inner {
+		margin: $margin-xlg 3.5em;
+	}
+	.cardContainer {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.newsGrid {
+		grid-template-columns: repeat(3, 1fr);
+
+		&__link {
+			grid-column: 1 / span 3;
+		}
+	}
 }
