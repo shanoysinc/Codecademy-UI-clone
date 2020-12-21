@@ -98,4 +98,27 @@
 			grid-column: 1 / span 3;
 		}
 	}
+
+	.getInspire__grid--1 {
+		grid-template-columns: repeat(3, 1fr);
+		// row-gap: 0;
+		// grid-auto-rows: 1fr;
+	}
+	.getInspire__grid--1 .span-2-Col {
+		margin-top: 3em;
+		grid-row: 1 / span 4;
+		grid-column: 2 / span 4;
+	}
+	.getInspireLink,
+	.inspireLinkWithImg {
+		margin-bottom: 2em;
+
+		& > p {
+			font-size: $font-size-sml;
+		}
+
+		& > a {
+			font-size: 1.3rem;
+		}
+	}
 }
