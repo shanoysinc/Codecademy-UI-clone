@@ -41,6 +41,12 @@
 		gap: 2em;
 	}
 
+	.cardContainer__subgrid-2-col {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1 / span 2;
+		gap: 2em;
+	}
+
 	.exploreCard,
 	.programmingLang,
 	.courseCard {

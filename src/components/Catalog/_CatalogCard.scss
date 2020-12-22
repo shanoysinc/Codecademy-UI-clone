@@ -6,7 +6,8 @@
 	// grid-auto-rows: 1fr;
 	// grid-auto-rows: min-content;
 }
-.cardContainer__subgrid-1-row {
+.cardContainer__subgrid-1-row,
+.cardContainer__subgrid-2-col {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	row-gap: 2em;
@@ -34,7 +35,11 @@
 }
 
 .exploreCard {
-	padding: $padding-md $padding-lg;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: $padding-lg $padding-lg;
 	text-transform: capitalize;
 }
 
@@ -67,6 +72,8 @@
 
 	&--job {
 		font-size: $font-size-sml;
+		margin-top: auto;
+
 		margin-left: auto;
 		font-weight: 600;
 	}
@@ -102,6 +109,9 @@
 }
 
 .courseCard {
+	display: flex;
+	flex-direction: column;
+
 	background-color: $color-yellow;
 	& > h3 {
 		margin-top: -0.5em;
@@ -111,6 +121,7 @@
 		font-family: serif;
 		display: flex;
 		justify-content: space-between;
+		margin-top: auto;
 		align-items: baseline;
 		text-transform: capitalize;
 	}
@@ -150,6 +161,7 @@
 
 	&--job {
 		font-size: $font-size-sml;
+		margin-top: auto;
 		margin-left: auto;
 		font-weight: 600;
 	}
