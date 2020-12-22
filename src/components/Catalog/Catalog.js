@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
 import Quiz from "../quiz/Quiz";
 import PopularCatalog from "./PopularCatalog";
 import NewsNoteWorth from "./newsNoteWorthy/NewsNoteWorth";
@@ -37,6 +37,9 @@ const subjects = [
 ];
 
 const Catalog = () => {
+	useEffect(() => {
+		document.title = "Catalog Home | Codecademy";
+	}, []);
 	return (
 		<div className="catalogContainer__outer">
 			<div className="sidebar">
