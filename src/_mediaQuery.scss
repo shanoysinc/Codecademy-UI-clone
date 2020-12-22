@@ -282,6 +282,21 @@
 	.quiz__catalog-btn {
 		display: none;
 	}
+
+	.quiz__box-items {
+		padding: $padding-lg 0;
+
+		& > .quizSvg_1 {
+			left: 10px;
+		}
+		> p {
+			font-size: 1.3rem;
+		}
+	}
+	.quizSvg_2 {
+		height: 55px;
+	}
+
 	.courseContainer__outer {
 		padding-left: 2.5em;
 		border-top: none;
