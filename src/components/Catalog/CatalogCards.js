@@ -14,32 +14,52 @@ import ExploreCard from "./catalogCard/ExploreCard";
 const CatalogCard = () => {
 	return (
 		<div className="cardContainer">
-			<ExploreCard
-				title={"Explore all python"}
-				svg={python}
-				gridRow="item-1"
-			/>
+			<div className="cardContainer__subgrid">
+				<ExploreCard
+					title={"Explore all python"}
+					svg={python}
+					gridRow="item-1"
+				/>
+				<ProgrammingLangCard title={"learn html"} />
+			</div>
 
 			<CareerPathCard title={"Front-End engineer"} svg={curriculum} />
 
-			<CourseCard title={"Learn Javascript"} />
-			<ProgrammingLangCard title={"learn html"} />
+			<div className="cardContainer__subgrid">
+				<CourseCard title={"Learn Javascript"} />
 
-			<ExploreCard
-				title={"Explore all web development"}
-				svg={webDevelopment}
-			/>
-			<ProgrammingLangCard title={"learn python 3"} />
+				<ExploreCard
+					title={"Explore all web development"}
+					svg={webDevelopment}
+				/>
+			</div>
+			<div className="cardContainer__subgrid-2">
+				<ExploreCard
+					title={"Explore all Javascript"}
+					svg={javascript}
+				/>
+				<ProgrammingLangCard title={"learn java"} />
 
-			<ExploreCard title={"Explore all Data science"} svg={dataScience} />
-			<CareerPathCard title={"Data Scientist"} svg={dataScientist} />
+				<div className="cardContainer__subgrid-3">
+					<div className="cardContainer__subgrid-1-row">
+						<ExploreCard
+							title={"Explore all Data science"}
+							svg={dataScience}
+						/>{" "}
+						<ProgrammingLangCard title={"learn python 3"} />
+					</div>
 
-			<ExploreCard title={"Explore all Javascript"} svg={javascript} />
-			<ProgrammingLangCard title={"learn java"} />
+					<CareerPathCard
+						title={"Full-Stack engineer"}
+						svg={fullstack}
+					/>
+				</div>
+			</div>
 
-			<CareerPathCard title={"Full-Stack engineer"} svg={fullstack} />
-
-			<CourseCard title={"Welcome to Codecademy"} />
+			<div className="cardContainer__subgrid">
+				<CareerPathCard title={"Data Scientist"} svg={dataScientist} />
+				<CourseCard title={"Welcome to Codecademy"} />
+			</div>
 		</div>
 	);
 };

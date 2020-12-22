@@ -31,9 +31,25 @@
 		padding-left: $padding-sml;
 	}
 	.cardContainer {
+		margin: 0;
+		padding: 0;
 		grid-template-columns: repeat(2, 1fr);
-		grid-auto-flow: dense;
+		grid-auto-flow: row dense;
+		// grid-template-rows: repeat(12, 160px);
+		// grid-template-rows: 1fr;
+		// height: 100%;
 		gap: 2em;
+	}
+
+	.exploreCard,
+	.programmingLang,
+	.courseCard {
+		// height: 160px;
+		// height: 50%;
+		// height: fit-content;
+	}
+	.career__path {
+		// height: fit-content;
 	}
 	.newsGrid {
 		grid-template-columns: repeat(2, 1fr);
@@ -281,6 +297,24 @@
 			grid-column: 4 / span 10;
 			margin-right: 2.5em;
 		}
+	}
+	.cardContainer__subgrid-2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1 / span 2;
+		gap: 2em;
+	}
+	.cardContainer__subgrid-1-row {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		// grid-column: 1 / span 2;
+		gap: 2em;
+	}
+	.cardContainer__subgrid-3 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1 / span 2;
+		gap: 2em;
 	}
 
 	.quiz__catalog-btn {
