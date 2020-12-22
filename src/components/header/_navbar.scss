@@ -1,3 +1,7 @@
+.navbarItems {
+	display: none;
+}
+
 .navbar {
 	background-color: hsl(0, 0%, 100%);
 	padding: $padding-lg;
@@ -6,6 +10,9 @@
 	position: fixed;
 	top: 0;
 	z-index: 200;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 	&__notification {
 		text-align: center;
 	}
@@ -25,9 +32,9 @@
 	}
 
 	&__icons {
-		position: absolute;
-		right: $padding-lg;
-		top: $padding-xlg;
+		// position: absolute;
+		// right: $padding-lg;
+		// top: $padding-xlg;
 	}
 	&__icon--sml {
 		height: 20px;
@@ -36,11 +43,10 @@
 		height: 26px;
 	}
 
-	&__list {
+	&__mobile-list {
 		margin: $margin-md;
 		display: flex;
 		flex-direction: column;
-
 		& > a {
 			padding-top: $padding-xlg;
 			text-decoration: none;
@@ -58,10 +64,12 @@
 
 #navbar__toggle {
 	display: none;
+	position: absolute;
+	top: 60px;
+	width: 100%;
 }
 
-.dropdown-btn {
-	display: block;
+.dropdown-mobile-btn {
 	margin: 0 auto;
 	margin-top: 3.5em;
 }

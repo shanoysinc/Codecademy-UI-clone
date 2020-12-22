@@ -170,6 +170,61 @@
 }
 
 @media screen and (min-width: 1200px) {
+	.navbar {
+		padding: 1.3em 6em;
+		display: flex;
+		align-items: center;
+		& > * + * {
+			padding-left: 1em;
+		}
+		&__icons {
+			position: absolute;
+			top: 1.6em;
+			right: 21em;
+		}
+	}
+	.navbar__toggleMenu-btn {
+		display: none;
+	}
+	.navbarItems {
+		display: flex;
+		align-items: center;
+		position: relative;
+		// background-color: red;
+		width: 100%;
+		& > a {
+			margin-top: 0.4em;
+
+			text-decoration: none;
+			color: $color-black;
+		}
+		& > a + a {
+			padding-left: 1em;
+		}
+		& > a:hover {
+			color: hsl(266, 100%, 45%);
+		}
+
+		&__btn {
+			margin-left: auto;
+			padding: 0.7em 1em;
+		}
+
+		&__icon {
+			position: absolute;
+			right: 11em;
+		}
+
+		.user-photo {
+			width: 40px;
+			height: 40px;
+			// padding-left: 1em;
+		}
+	}
+	.catalogContainer__outer {
+		margin-top: 1em;
+	}
+
 	.sidebar {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
