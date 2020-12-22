@@ -6,7 +6,6 @@ import menu from "../../assests/svg/menu.svg";
 import DropDownItems from "./toggleComponent/DropDownItems";
 import NotificationItems from "./toggleComponent/NotificationItems";
 import NavbarItems from "./navbarItems/NavBarItems";
-import userPhoto from "../../assests/img/images.jpg";
 
 const NavBar = () => {
 	const [showNotification, setShowNotification] = useState(false);
@@ -15,12 +14,12 @@ const NavBar = () => {
 	const notifToggleHandler = () => {
 		const toggle = document.getElementById("navbar__toggle");
 		const navbar = document.querySelector(".navbar");
-
+		const browserWidth = document.body.offsetWidth;
 		if (toggle.style.display === "block") {
 			toggle.style.display = "none";
 			setShowNotification(() => false);
 			navbar.style.bottom = null;
-		} else {
+		} else if (browserWidth < 1200) {
 			setShowNotification(() => true);
 			toggle.style.display = "block";
 			navbar.style.bottom = "70%";
