@@ -304,8 +304,12 @@
 		border-left: 1px solid $color-black;
 	}
 	.footerContainer__inner {
-		margin: $margin-xlg 8em;
+		margin: $margin-sml 8em;
 	}
+	.infoContainer {
+		margin-top: $margin-lg;
+	}
+
 	.copyWriteInfo__Container {
 		display: flex;
 		align-items: baseline;
