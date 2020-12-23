@@ -2,7 +2,7 @@
 import React from "react";
 import quizSvg_1 from "../../assests/svg/quiz/quiz-2.svg";
 import quizSvg_2 from "../../assests/svg/quiz/quiz-1.svg";
-
+import quizSvg_bg from "../../assests/svg/quiz/quiz-bg.svg";
 const Quiz = () => {
 	return (
 		<div className="quiz">
@@ -12,7 +12,7 @@ const Quiz = () => {
 				<div className="quiz__box-items">
 					<img src={quizSvg_1} alt="quiz svg" className="quizSvg_1" />
 					<img
-						src={quizSvg_2}
+						src={quizSvg_bg}
 						alt="quiz svg"
 						className="quizSvg_2--bg"
 					/>
