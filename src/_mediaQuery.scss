@@ -1,4 +1,4 @@
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 48em) {
 	.catalogContainer__inner {
 		margin: $margin-xlg 2em;
 	}
@@ -111,7 +111,7 @@
 	}
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 63em) {
 	.catalogContainer__inner {
 		margin: $margin-xlg 3.5em;
 	}
@@ -179,7 +179,7 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) {
 	.navbar {
 		padding: 1.3em 6em;
 		display: flex;
