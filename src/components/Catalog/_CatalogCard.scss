@@ -73,7 +73,8 @@
 	&--job {
 		font-size: $font-size-sml;
 		margin-top: auto;
-
+		background-color: #fff5ff;
+		padding: $padding-sml $padding-md;
 		margin-left: auto;
 		font-weight: 600;
 	}
@@ -160,6 +161,9 @@
 	}
 
 	&--job {
+		padding: $padding-sml $padding-md;
+
+		background-color: #f5fcff;
 		font-size: $font-size-sml;
 		margin-top: auto;
 		margin-left: auto;
