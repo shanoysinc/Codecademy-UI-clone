@@ -12,7 +12,7 @@ const CopyWriteInfo = () => {
 				<a href="#">Terms</a>
 			</div>
 			<p className="copyWriteInfo__company">
-				Made with️ ❤️ by Shanoy Sinclair © 2020 Codecademy Clone
+				Made with️ ❤️ by Shanoy Sinc © 2020 Codecademy Clone
 			</p>
 		</div>
 	);
