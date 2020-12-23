@@ -80,6 +80,12 @@
 		padding-left: 5em;
 	}
 
+	.getInspire__subgrid-col-3 {
+		// display: grid;
+		// grid-template-columns: repeat(1, 1fr);
+		grid-column: 1 / span 3;
+	}
+
 	.getInspireLink {
 		& > a {
 			font-size: 1.35rem;
@@ -110,7 +116,7 @@
 		}
 	}
 }
-
+// 1008px
 @media screen and (min-width: 63em) {
 	.catalogContainer__inner {
 		margin: $margin-xlg 3.5em;
@@ -137,30 +143,17 @@
 	.getInspire__grid--2 {
 		grid-auto-flow: dense;
 	}
-	.getInspire__grid--2 .getInspireLink:nth-child(5),
-	.getInspire__grid--2 .getInspireLink:nth-child(6),
-	.getInspire__grid--2 .getInspireLink:nth-child(7),
-	.getInspire__grid--2 .getInspireLink:nth-child(8) {
-		grid-column: 3;
-		margin-top: initial;
-		padding-left: 0;
+
+	.getInspire__subgrid-col-3 {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column: 1 / span 3;
+		column-gap: 2em;
+
+		& > .span-2-Col {
+			grid-column: 1 / span 2;
+		}
 	}
 
-	.getInspire__grid--2 .getInspireLink:nth-child(6) {
-		position: absolute;
-		top: 38%;
-	}
-
-	.getInspire__grid--2 .getInspireLink:nth-child(7) {
-		position: absolute;
-
-		top: 52%;
-	}
-	.getInspire__grid--2 .getInspireLink:nth-child(8) {
-		position: absolute;
-
-		top: 59%;
-	}
 	.getInspireLink,
 	.inspireLinkWithImg {
 		margin-bottom: 2em;
@@ -172,10 +165,6 @@
 		& > a {
 			font-size: 1.3rem;
 		}
-	}
-
-	.getInspire__grid--2 .span-2-Col {
-		grid-column: 1 / span 2;
 	}
 }
 
@@ -325,6 +314,7 @@
 		border-top: none;
 		border-left: 1px solid $color-black;
 	}
+
 	.footerContainer__inner {
 		margin: $margin-sml 8em;
 	}

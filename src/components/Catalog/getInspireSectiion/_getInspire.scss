@@ -10,16 +10,19 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2em;
-	position: relative;
-}
-.getInspire__grid--2 .span-2-Col {
-	grid-column: 1 / span 2;
+	// position: relative;
 }
 
-.getInspire__grid--2 .getInspireLink:nth-child(5),
-.getInspire__grid--2 .getInspireLink:nth-child(6),
-.getInspire__grid--2 .getInspireLink:nth-child(7),
-.getInspire__grid--2 .getInspireLink:nth-child(8) {
+// .getInspire__grid--2 .getInspireLink:nth-child(5),
+// .getInspire__grid--2 .getInspireLink:nth-child(6),
+// .getInspire__grid--2 .getInspireLink:nth-child(7),
+// .getInspire__grid--2 .getInspireLink:nth-child(8) {
+// 	grid-column: 1 / span 2;
+// }
+
+.getInspire__subgrid-col-3 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
 	grid-column: 1 / span 2;
 }
 

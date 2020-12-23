@@ -53,31 +53,35 @@ const GetInspire = () => {
 						contentType={"video"}
 						title={"What Programming Language Should You Learn?"}
 					/>
-					<InspireLinkWithImg
-						img={blogImg_1}
-						contentType={"Article"}
-						title={"Consider Design While You Build"}
-						spanCol={"span-2-Col"}
-					/>
+					<div className="getInspire__subgrid-col-3">
+						<InspireLinkWithImg
+							img={blogImg_1}
+							contentType={"Article"}
+							title={"Consider Design While You Build"}
+							spanCol={"span-2-Col"}
+						/>
 
-					<GetInspireLink
-						contentType={"article"}
-						title={"What is programming?"}
-					/>
-					<GetInspireLink
-						contentType={"video"}
-						title={
-							"Learn From Home Day: Intro to JavaScript—the Language of the Internet!"
-						}
-					/>
-					<GetInspireLink
-						contentType={"video"}
-						title={"What is Front-End?"}
-					/>
-					<GetInspireLink
-						contentType={"Blog"}
-						title={"Myspace and the Coding Legacy"}
-					/>
+						<div className="getInspire__subgrid-col-1">
+							<GetInspireLink
+								contentType={"article"}
+								title={"What is programming?"}
+							/>
+							<GetInspireLink
+								contentType={"video"}
+								title={
+									"Learn From Home Day: Intro to JavaScript—the Language of the Internet!"
+								}
+							/>
+							<GetInspireLink
+								contentType={"video"}
+								title={"What is Front-End?"}
+							/>
+							<GetInspireLink
+								contentType={"Blog"}
+								title={"Myspace and the Coding Legacy"}
+							/>
+						</div>
+					</div>
 
 					<InspireLinkWithImg
 						img={videoSvg}
