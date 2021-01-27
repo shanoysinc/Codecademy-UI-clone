@@ -170,7 +170,7 @@
 
 @media screen and (min-width: 75em) {
 	.navbar {
-		padding: 1.3em 6em;
+		padding: 1.125em 6em;
 		display: flex;
 		align-items: center;
 		& > * + * {
@@ -194,7 +194,7 @@
 		width: 100%;
 		& > a {
 			margin-top: 0.4em;
-			font-size: 0.97rem;
+			font-size: 0.9rem;
 			text-decoration: none;
 			color: $color-black;
 		}
@@ -207,6 +207,7 @@
 
 		&__btn {
 			margin-left: auto;
+			font-size: 0.9rem;
 			padding: 0.7em 1em;
 		}
 
