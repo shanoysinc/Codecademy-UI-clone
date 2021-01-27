@@ -55,6 +55,7 @@
 	}
 	& > p {
 		text-transform: capitalize;
+		font-size: 0.8rem;
 	}
 
 	&-difficulty {
@@ -62,7 +63,7 @@
 		color: white;
 		text-transform: uppercase;
 		margin-right: 0.3em;
-		font-size: 0.9rem;
+		// font-size: 0.9rem;
 	}
 
 	& > h3 {
@@ -101,7 +102,7 @@
 
 	&--difficulty {
 		color: #4b4b4d;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 }
 
@@ -145,6 +146,7 @@
 
 	& > p {
 		text-transform: capitalize;
+		font-size: 0.8rem;
 	}
 
 	&-difficulty {
@@ -152,7 +154,6 @@
 		color: white;
 		text-transform: uppercase;
 		margin-right: 0.3em;
-		font-size: 0.9rem;
 	}
 
 	& > h3 {
